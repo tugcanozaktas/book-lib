@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
-const fetchUserById = require("~root/actions/users/fetchUserById");
-const modifyUser = require("~root/actions/users/modifyUser");
-const handleAPIError = require("~root/utils/handleAPIError");
+const fetchUserById = require("../../../../actions/users/fetchUserById");
+const modifyUser = require("../../../../actions/users/modifyUser");
+const handleAPIError = require("../../../../utils/handleAPIError");
 
 const putUserDetails = async (req, res) => {
   const { userId } = req.user;

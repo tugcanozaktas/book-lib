@@ -1,4 +1,8 @@
-const { submitQuery, camelKeys, getFirst } = require("~root/lib/database");
+const {
+  submitQuery,
+  camelKeys,
+  getFirst
+} = require("../../../../lib/database");
 
 const selectUser = ({ email, password }) => submitQuery`
     SELECT 

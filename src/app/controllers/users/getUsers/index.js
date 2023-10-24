@@ -1,5 +1,5 @@
-const fetchUsers = require("~root/actions/users/fetchUsers");
-const handleAPIError = require("~root/utils/handleAPIError");
+const fetchUsers = require("../../../../actions/users/fetchUser");
+const handleAPIError = require("../../../../utils/handleAPIError");
 
 const getUsers = async (req, res) => {
   try {

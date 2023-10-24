@@ -1,5 +1,5 @@
-const fetchReaderById = require("~root/actions/reader/fetchReaderById");
-const handleAPIError = require("~root/utils/handleAPIError");
+const handleAPIError = require("../../../../utils/handleAPIError");
+const fetchReaderById = require("../../../../actions/reader/fetchReaderById");
 
 const getReaderById = async (req, res) => {
   const { readerId } = req.params;

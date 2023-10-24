@@ -59,5 +59,7 @@ DROP TABLE IF EXISTS Readers;
 CREATE TABLE Readers(
   reader_id int AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
+  email VARCHAR(60) NOT NULL,
+  password VARCHAR(60) NOT NULL,
   genre VARCHAR(50) NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci;

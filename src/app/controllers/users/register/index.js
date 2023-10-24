@@ -1,5 +1,5 @@
-const createUser = require("~root/actions/users/createUser");
-const handleAPIError = require("~root/utils/handleAPIError");
+const createUser = require("../../../../actions/users/createUser");
+const handleAPIError = require("../../../../utils/handleAPIError");
 const postUserSchema = require("./schemas/postUserSchema");
 
 const postUser = async (req, res) => {

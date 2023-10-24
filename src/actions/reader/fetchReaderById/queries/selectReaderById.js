@@ -1,8 +1,8 @@
-const { submitQuery, camelKeys } = require("~root/lib/database");
+const { submitQuery, camelKeys } = require("../../../../lib/database");
 
 const selectReaderById = ({ readerId }) => submitQuery`
     SELECT 
-       reader_id, name, genre
+       reader_id, name, email, genre
     FROM Readers
     WHERE reader_id= ${readerId}
     `;

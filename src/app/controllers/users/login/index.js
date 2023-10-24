@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const fetchUser = require("~root/actions/users/fetchUser");
+const fetchUser = require("../../../../actions/users/fetchUser");
 
 const login = async (req, res) => {
   const { email, password } = req.body;

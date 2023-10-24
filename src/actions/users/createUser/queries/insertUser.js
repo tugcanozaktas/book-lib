@@ -1,4 +1,4 @@
-const { submitQuery, getInsertId } = require("~root/lib/database");
+const { submitQuery, getInsertId } = require("../../../../lib/database");
 
 const insertUser = ({
   firstName,

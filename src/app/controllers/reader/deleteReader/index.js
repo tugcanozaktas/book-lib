@@ -1,5 +1,5 @@
-const handleAPIError = require("~root/utils/handleAPIError");
-const removeReader = require("~root/actions/reader/removeReader");
+const handleAPIError = require("../../../../utils/handleAPIError");
+const removeReader = require("../../../../actions/reader/removeReader");
 
 const deleteReader = async (req, res) => {
   const { readerId } = req.params;

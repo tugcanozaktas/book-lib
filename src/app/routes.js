@@ -6,7 +6,7 @@ const putUserDetails = require("./controllers/users/putUserDetails");
 const authentication = require("./middlewares/authentication");
 const authorise = require("./middlewares/authorisation");
 const getUserTypes = require("./controllers/users/userTypes");
-const { ADMIN } = require("~root/constants/userTypes");
+const { ADMIN } = require("../constants/userTypes");
 
 // Readers //
 

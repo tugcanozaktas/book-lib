@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const request = require("supertest");
 const router = require("~root/app");
-const safeDescribe = require("~test/utils/safeDescribe");
+const safeDescribe = require("../../utils/safeDescribe");
 const deleteReader = require("./queries/deleteReader");
 
 safeDescribe("#POST readers", () => {
@@ -16,6 +16,8 @@ safeDescribe("#POST readers", () => {
       .post("/readers")
       .send({
         name: "Jane Doe",
+        email: "janemdoe@gmail.com",
+        password: "doedoe12",
         genre: "Bio"
       });
 

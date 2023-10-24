@@ -24,9 +24,9 @@ VALUES (2, "Joe", "Bloggs","joebloggs@gmail.com", SHA2(CONCAT("password","SUPER_
 INSERT INTO users (user_id, first_name, last_name, email, password, user_type_id, created_at)
 VALUES (3, "Jim", "Bloggs" , "jimbloggs@yahoo.com", SHA2(CONCAT("password","SUPER_DUPER_SECRET"), 224), 2, "2020-11-20 12:00:00");
 
-INSERT INTO Readers (name, genre)
-VALUES ("John Smith", "Horror");
-INSERT INTO Readers (name, genre)
-VALUES ("Kate Mar", "Novel");
-INSERT INTO Readers (name, genre)
-VALUES ("James Luce", "Romantic");
+INSERT INTO Readers (name, email, password, genre)
+VALUES ("John Smith","johnsmith@gmail.com","smithsmith12", "Horror");
+INSERT INTO Readers (name, email, password, genre)
+VALUES ("Kate Mar","katemar@gmail.com","marmar12",  "Novel");
+INSERT INTO Readers (name, email, password, genre)
+VALUES ("James Luce","jamesluce@gmail.com","luceluce12",  "Romantic");

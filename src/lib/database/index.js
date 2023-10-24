@@ -5,9 +5,9 @@ const path = require("path");
 const get = require("lodash/get");
 const camelCase = require("lodash/camelCase");
 const mapKeys = require("lodash/mapKeys");
-const monitoring = require("~root/utils/monitoring");
-const parseMySQLConnectionString = require("~root/utils/parseMySQLConnectionString");
-const nestTabularData = require("~root/utils/nestTabularData");
+const monitoring = require("../../utils/monitoring");
+const parseMySQLConnectionString = require("../../utils/parseMySQLConnectionString");
+const nestTabularData = require("../../utils/nestTabularData");
 
 require("dotenv").config({
   path: path.join(__dirname, ".env")

@@ -1,11 +1,11 @@
-const handleAPIError = require("~root/utils/handleAPIError");
-const createReader = require("~root/actions/reader/createReader");
+const handleAPIError = require("../../../../utils/handleAPIError");
+const createReader = require("../../../../actions/reader/createReader");
 
 const postReader = async (req, res) => {
-  const { name, genre } = req.body;
+  const { name, email, password, genre } = req.body;
 
   try {
-    const { readerId } = await createReader({ name, genre });
+    const { readerId } = await createReader({ name, email, password, genre });
 
     res.status(201).send({
       readerId

@@ -1,5 +1,5 @@
-const fetchAllReaders = require("~root/actions/reader/fetchAllReaders");
-const handleAPIError = require("~root/utils/handleAPIError");
+const handleAPIError = require("../../../../utils/handleAPIError");
+const fetchAllReaders = require("../../../../actions/reader/fetchAllReaders");
 
 const getAllReaders = async (req, res) => {
   try {

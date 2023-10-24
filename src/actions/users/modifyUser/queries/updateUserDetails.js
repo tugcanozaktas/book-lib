@@ -1,4 +1,4 @@
-const { submitQuery } = require("~root/lib/database");
+const { submitQuery } = require("../../../../lib/database");
 
 const updateUserDetails = ({
   userId,

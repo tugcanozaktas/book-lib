@@ -1,7 +1,7 @@
 const { ValidationError } = require("yup");
-const monitoring = require("~root/utils/monitoring");
-const parseYupError = require("~root/utils/parseYupError");
-const { BAD_REQUEST, ERROR } = require("~root/constants/HttpStatusCodes");
+const monitoring = require("../monitoring");
+const parseYupError = require("../parseYupError");
+const { BAD_REQUEST, ERROR } = require("../../constants/HttpStatusCodes");
 
 const GENERIC_ERROR_MESSAGE = "API Error";
 
